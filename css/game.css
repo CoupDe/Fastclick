@@ -1,0 +1,46 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  grid-template-rows: repeat(6, 100px);
+  gap: 2px;
+
+}
+
+.game-field {
+  background-color: orange;
+  min-height: 1vh;
+  line-height: 1vh;
+}
+
+.target {
+  display: flex;
+  background-color: green;
+  color: white;
+  font-size: 24pt;
+  justify-content: center;
+  align-items: center;
+}
+
+.miss {
+	-webkit-animation: flash linear 0.5s  ;
+  animation: flash linear 0.5s ;
+
+}
+@keyframes flash {
+	0% {  background-color:rgb(216, 45, 45); opacity: 1; } 
+	50% {  background-color:rgb(216, 45, 45); opacity: .1; } 
+  100% { background-color:rgb(216, 45, 45); opacity: 1; }
+  
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.d-none{
+  display: none;
+}
+
+.wrapper{
+  display: grid;
+}
